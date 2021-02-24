@@ -29,6 +29,12 @@
     <article class="py-12 px-4">
         <div class="max-w-3xl mx-auto markdown">
            {{ .Content }}
+            <h2 class="text-4xl px-4 mb-4 leading-tight font-heading sm:6xl">Publications and Press</h2>
+            {{ if .Params.pubs }}
+                {{ range .Params.pubs }}
+                <li><a href="{{.pubURL}}" target="_blank">{{.pubname}}</a></li>
+                {{end}}
+            {{ end }}
         </div>
     </article>
 
