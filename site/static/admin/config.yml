@@ -23,8 +23,10 @@ collections:
       - {label: "Spotlight (only select if complete", name: "spotlight", widget: "select", options: ["true", "false"], required: false}
       - {label: "External URL (if program has its own separate site like HSM or CW)", name: "externalurl", widget: "string", required: false}
       - {label: "Image for dedicated page (re-use ones already used as much as possible)", name: "image", widget: "image"} # dedicated page image
+      - {label: "COVID Related?", name: "solution_area",widget: "select", options: ["COVID-19 Response Solutions"], required: false} # if covid related select
       - {label: "Body", name: "body", widget: "markdown", required: false} #body of the case study
       - {label: "Publication(s)", name: "pubs", widget: "list", fields: [{label: "Publication Title", name: "pubname", widget: "string"},{label: "Publication URL", name: "pubURL", widget: "string"}], required: false}
+
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Company blog" # Used in the UI
     folder: "site/content/blog" # The path to the folder where the documents are stored
