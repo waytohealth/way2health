@@ -5,10 +5,10 @@ area: research
 subdomain: Vaccination
 authors:
   - authorimage: /images/uploads/milkman-katy.jpg
-    authorname: Katherine Milkman
+    authorname: Katherine Milkman, PhD
     authorrole: Co-PI
   - authorimage: /images/uploads/mitesh_0.jpg
-    authorname: Mitesh Patel
+    authorname: Mitesh Patel, MD, MBA
     authorrole: Co-PI
 summary: >-
   This is a mega trial with planned enrollment of 150,000 patients across Penn Medicine and Geisinger
@@ -56,9 +56,11 @@ Working closely with Penn Medicine and Geisinger Health System, Way to Health in
 - Not yet received a flu shot
 
 **Interventions**
-19 different arms (interventions) were built and participants randomized across them. The program went live on Sept 24, 2020 and recruitment is still ongoing. The initial findings are derived from data collected up to December 31, 2020.  Protocols varied the contents and/or timing of up to two sets of text reminders to get a flu shot sent from the patient’s healthcare provider in the three days preceding the patient’s appointment. These protocols were set up as different arms and patients were randomized amongst them. 
+
+The program went live on Sept 24, 2020 and recruitment is still ongoing. The initial findings are derived from data collected up to December 31, 2020.  Protocols varied the contents and/or timing of up to two sets of text reminders to get a flu shot sent from the patient’s healthcare provider in the three days preceding the patient’s appointment. 19 different arms (interventions) were built and participants randomized across them. 
 
 **Main Outcomes and Measures**
+
 The key metric tracked was the incremental uptake of the flu vaccine compared to last year's baseline for each intervention / nudge. 
 
 ## Way to Health Use
