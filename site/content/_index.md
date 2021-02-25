@@ -65,9 +65,8 @@ domains:
         is_even: false
         source: /healthsystem
       - title: For Researchers & Innovators
-        image: images/researchers.jpg
-        image_caption: Drs. David Asch, Kevin Volpp, Mitesh Patel, Scott Halpern, Shivan Mehta and Kit Delgado, Penn Medicine
-        subtitle1: Design any interventional study
+        image: images/researcher2.jpg
+        image_caption: From L to R- Drs David Asch, Kevin Volpp, Scott Halpern, Mitesh Patel, Kit Delgado, Shreya Kangovi, Perelman School of Medicine
         description1: Innovation and research require flexibility. Integration with the EHR opens up additional opportunities. Trials can be run locally or virtually. Way to Health has run virtual studies across 50 states. 
         subtitle2: Automate multiple aspects of running an RCT
         description2: Innovation should be backed by evidence. Randomized Controlled Trials (RCTs) are the gold standard to generate evidence in healthcare. Our background and genesis can help guide the the setup of innovation projects to gather data to support (or reject) hypotheses. Automation built into the system can help doing this quickly and minimize personnel costs. 
