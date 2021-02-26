@@ -51,6 +51,11 @@ origins:
 
 timeline:
   milestones:
+    - date: February 2021
+      icon: trophy
+      iconcolor: blue
+      milestone: 300+ programs and 850,000+ patients
+      text: We expect to hit our 5 year goal of touching 1 million patients / participants this year. We are proud to be part of some ground breaking studies (BCFG Flu vaccination) and also enabling COVID vaccination related efforts including local community clinics and larger outreach to vulnerable patient populations. 
     - date: December 2020
       icon: line-chart
       iconcolor: blue
