@@ -4,7 +4,7 @@ title: >-
   people vaccinated
 date: '2021-02-20'
 summary: >-
-  Furhter coverage on the Flu vaccination mega study in Forbes. Here's a quote
+  Further coverage on the Flu vaccination mega study in Forbes. Here's a quote
   from the article - The researchers are optimistic that that what they've
   learned about the flu will help with COVID. "Our results suggest a promising
   way to encourage COVID-19 vaccinations at scale—we can potentially help save
