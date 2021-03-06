@@ -15,7 +15,7 @@ label: COVID-19
 </blockquote>
 
 ## Genesis
-Black Americans are at greater risk of contracting COVID-19, and twice as likely to become hospitalized with COVID than their white counterparts. Thus far, they are also statistically under-vaccinated for COVID-19, largely due to both difficulty in accessing the shots and an underlying mistrust of the larger health care industry. Mercy Catholic, nearby at 54th and Cedar, has been treating people in this neighborhood for over a century. We partnered with them to put together our first off-site mass vaccination event, which was preceded by outreach and education programs to convince neighbors that it would be safe. As Kat Lee says in [this NPR article](https://whyy.org/articles/black-church-leaders-health-systems-organize-mass-vaccination-site-in-west-philadelphia/), “We set forth on creating a clinic that would promote accessibility while using novel principles of no/low tech to ensure we would provide an environment in a day when anyone and everyone would have access to it, and use this concept to inform additional clinics.”
+Black Americans are at greater risk of contracting COVID-19, and twice as likely to become hospitalized with COVID than their white counterparts. Thus far, they are also statistically under-vaccinated for COVID-19, largely due to both difficulty in accessing the shots and an underlying mistrust of the larger health care industry. Mercy Catholic, nearby at 54th and Cedar, has been treating people in this neighborhood for over a century. We partnered with them to put together our first off-site mass vaccination event, which was preceded by outreach and education programs to convince neighbors that it would be safe. As Kat Lee says in [this NPR article](https://whyy.org/articles/black-church-leaders-health-systems-organize-mass-vaccination-site-in-west-philadelphia/), “We set forth on creating a clinic that would promote accessibility while using novel principles of no/low tech to ensure we would provide an environment in a day when anyone and everyone would have access to it, and use this concept to inform additional clinics.” The effort was dubbed the Vaccine Collaborative and you can follow more about this project on Twitter under the #VaccineCollaborative hashtag. 
 
 
 ## What happened 
@@ -43,7 +43,7 @@ There were a lot of stakeholders and teams that had to be pulled together to mak
 
 The clinic ran smoothly with some hiccups as with anything run for the very first time. Those were addressed quickly and we now knew what to do the next time around. Kudos to Neda Khan who led the entire effort from a W2H perspective with a huge amount of support from Michael Kopinsky. Lauren Hahn from the CDH group within CHCI did incredible work defining the language and flow of SMS and IVR and much more. 
 
-The clinic was a success and as with anything else, the reward for a job well done is another job. 
+The clinic was a success with zero lines and received a Net Promoter Score (NPS) of 90 with 300 respondents. And as with anything else, the reward for a job well done is another job. 
 
 ### **Clinic at the Francis Myers Recreation Center on 2/27/2021. Goal: 750 vaccinations. Actual: 765**
 
@@ -53,6 +53,8 @@ The clinic was a success and as with anything else, the reward for a job well do
 - The decision was also made to make this a fully inbound process. Anyone could call or text into the numbers provided. The system would take on the responsibility to ask and collect information on zipcodes, allergies, race, date of birth and much more to make sure we had all the data needed to fill out the forms needed and to also report back to the city. This ultimately worked well but I can assure you that when the protocol is finalized on Friday morning and the system needs to go-live on Sunday, there will be ~~blood~~ challenges. That's a joke btw, although I've been told my joke skills are terrible and I should keep my day job. We got it done over the weekend and in time for a Sunday launch. 
 
 I had the privilege of being able to volunteer at this clinic. My responsibility, along with Davis Herman was to help Neda Khan manage the flow of people who showed up without an appointment or had issues setting up their appointment. It was an extraordinary experience. We managed to sign up and get 110 additional walk-ins vaccinated when others canceled their appointments. 
+
+As before, there were no lines and NPS still remained at around 90 with over 500 cumulative respondents. 
 
 ### **Clinic on 3/6/2021. Goal: 1750 vaccinations**
 - TBD
