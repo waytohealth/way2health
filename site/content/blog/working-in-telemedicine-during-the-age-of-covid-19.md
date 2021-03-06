@@ -12,6 +12,7 @@ label: COVID-19
 ---
 2020 has led to many changes— transitioning to remote work being one of them. Many of us are still getting used to our new reality of telecommuting with about half of employed adults currently working from home. Telecommuting has been on the rise over the last several years and has accelerated exponentially since the pandemic first began. Drawing a direct parallel to this, the field of telemedicine has had a similar claim to fame. Put these two together and working on telemedicine programs for a health system in the midst of a pandemic can be a whole other ball game. I sat down with some integral members of the Way to Health Team to talk about the COVID-19 pandemic and just how it impacted their work here.
 
+<br/> <hr/>
 
 
 **Neda Khan, Senior Applications Specialist**
@@ -28,7 +29,7 @@ _What makes the service Way to Health provides unique?_
 
 Way to Health is really set apart from our competition due to a couple factors. We have seamless integration with EPIC that makes it easy for providers to enroll patients into different programs. Since we’ve been around for so long, we have a ton of experience with what works and what patients respond to in texting and remote monitoring programs. We have the ability to integrate with connected care devices —  this makes a huge impact, and we have the data and metrics to show just how successful it can be.
 
-
+<br/> <hr/>
 
 **Kyle McGrogan, Software Developer**
 
@@ -40,7 +41,7 @@ _What is one silver lining you have noticed amongst all the uncertainty and unre
 
 One silver lining I’ve noticed is that a lot of red tape got cut away. People are focusing on what we need to do to get care to the people who need it most. I think everyone realized there was a need and started asking, “How can we actually do this?” For instance, integrating with Lancaster General Hospital usually would’ve taken 1-2 months to get approval up the chain whereas now, it happened in a week. Everyone’s coming together to recognize that need for care and how we can get things done quickly. 
 
-
+<br/> <hr/>
 
 **Michael Kopinsky, Engineering Lead**
 
@@ -51,6 +52,8 @@ Since we already had occasional remote work we had the tools in place in terms o
 _Has your work become more meaningful in any way?_
 
 We have always done a combination of research and clinical work. With COVID Watch, we are much closer to patients and patient-specific needs. Normally we’re looking for an elegant solution that meets lots of people's needs, or we stop to consider heavily what clinicians and patients want. Now it's more like, “Here's the specific problem these people are having, and how do we solve it?” In the past we haven't really been involved in running programs. We just support the program and help it launch. With COVID Watch, we’re intimately involved with tracking data daily and closely monitoring what our patients are doing. We can say they're our patients when in the past they’ve been likened to our “customers.” It’s definitely more meaningful. 
+
+<br/> <hr/>
 
 **Mohan Balachandran, COO**
 

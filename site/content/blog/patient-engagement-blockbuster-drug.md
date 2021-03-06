@@ -5,7 +5,7 @@ summary: >-
   Over the course of the last several years, "patient engagement" has mushroomed into a lead topic for speakers, conferences, trade shows, pitch decks, analyst reports and countless headlines (now including this one). The trouble is, there is still no clear path forward to applying learnings at scale. 
 image: /images/bg/patient-engagement.svg
 authorname: Mohan Balachandran
-authorimage: /images/team/balachandran.png
+authorimage: /images/team/mohan.jpg
 label: Industry Insights
 ---
 

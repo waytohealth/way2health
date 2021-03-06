@@ -5,7 +5,7 @@ summary: >-
   Way to Health has been used to test the effectiveness of patient financial incentives in improving outcomes in a variety of health contexts. Now, many of the functions deployed in those studies, including text messaging, will be used by researchers for PENN’s National Institute of Advanced Laboratories for Accelerating the Reach and Impact of Treatments for Youth and Adults with Mental Illness (ALACRITY) Center. Read on to understand how texting and other functions of Way to Health will be deployed in research among patients newly diagnosed with depression.        
 image: /images/bg/money.svg
 authorname: Mohan Balachandran
-authorimage: /images/team/balachandran.png
+authorimage: /images/team/mohan.jpg
 label: Projects
 ---
 Way to Health was purpose-built to help researchers address critical and complex problems facing healthcare and patient health by providing the tools needed to rigorously test solutions on one comprehensive digital platform. Mental illness qualifies as one of those challenges in need of fixing. It is estimated that 9.6 million American adults suffer from a serious mental illness (SMI), experiencing a diminished ability to function in daily life and a shorter life-expectancy. In addition to the patient burden, mental illness drains healthcare budgets as the third most expensive medical condition after heart conditions and traumatic injury.
