@@ -66,5 +66,7 @@ With the ongoing success of the program, there was immediate interest from other
 
 Given the success of the program and the sister program (COVID Pulse that gave patients Pulse Oximeters to have a more objective measure of dyspnea - more on this in a subsequent post), the team applied for and [won a $2.5 million grant from PCORI](https://www.pennmedicine.org/news/news-releases/2020/august/2-million-grant-supports-penn-medicine-study-of-covid-watchs-impact-on-health-disparities) to run a full randomized control trial comparing the relative advantages and the program's ability to eliminate racial disparities in care. Enrollment in this program was completed in 4 months and we are currently in the data analysis phase. We'll post more about the results when they can be shared. The program has a [dedicated website](https://covidwatch.waytohealth.org) where more details on the team involved, press, publications, patients quotes and more are documented.
 
+There is an additional manuscript being written about the effectiveness of the Watch program. More on that soon. 
+
 <br/> <hr/>
 Hope you found this post useful. Please feel free to drop us a line via the Contact link below and we'll be happy to discuss this more with you. Look for part 3 of this series next week.
