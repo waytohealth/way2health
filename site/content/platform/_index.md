@@ -41,7 +41,7 @@ modules:
           id: remote
       is_even: false
       id: remote
-    - module_name: Randomized Control Trials
+    - module_name: Randomized Controlled Trials
       image: images/peng/rct.jpg
       image_caption:
       listing:
