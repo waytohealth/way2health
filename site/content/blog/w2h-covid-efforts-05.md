@@ -2,7 +2,7 @@
 title: Responding to COVID-19. Part 5 - Community Vaccination Clinics
 date: '2021-03-30'
 summary: >-
-  This is part 5 of a series on Way to Health's involvement in helping address the pandemic. This post focuses on the design and launch of the Community Vaccine Clinics project. Black Americans are at a greater risk of contracting COVID-19 and twice as likely to be hospitalized. They are also under-vaccinated compared to other groups. There was an intentional effort at Penn Medicine to set up community vaccination clinics in partnership with local community and faith based organizations to try and vaccinate this vulnerable population. Led by Dr. Kathleen Lee and supported on the backend by Way to Health, the effort has so-far managed to vaccinate 3000+ individuals over three 1 day clinics. 
+  This is part 5 of a series on Way to Health's involvement in helping address the pandemic. This post focuses on the design and launch of the Community Vaccine Clinics project. Black Americans are at a greater risk of contracting COVID-19 and twice as likely to be hospitalized. They are also under-vaccinated compared to other groups. There was an intentional effort at Penn Medicine to set up community vaccination clinics in partnership with local community and faith based organizations to try and vaccinate this vulnerable population. Led by Dr. Kathleen Lee and supported on the backend by Way to Health, the effort has so-far managed to vaccinate 3000+ individuals over three 1 day clinics. The aggregate NPS across all three clinics is 94!
 image: /images/uploads/comm.clinic.vax.jpg
 authorname: Mohan Balachandran
 authorimage: /images/team/mohan.jpg
@@ -56,8 +56,15 @@ I had the privilege of being able to volunteer at this clinic. My responsibility
 
 As before, there were no lines and NPS still remained at around 90 with over 500 cumulative respondents. 
 
-### **Clinic on 3/6/2021. Goal: 1750 vaccinations**
-- TBD
+### **Clinic at the School of the Future on 3/6/2021. Goal: 1500 vaccinations. Actual: 1543**
+
+- We implemented two new approaches to reach out to the community: 
+- 1) We had an ambassador program that engaged people who had been vaccinated at one of our two previous clinics and asked them to share the clinic number with people they know qualify and need a vaccine. We were able to recruit 99 ambassadors to help spread the clinic number to their family members and neighbors.
+- 2) We worked with community group leaders and community establishments to engage their communities, such as local barbershops. 
+- We anticipated 10-15% cancellations/no-shows so we opened up 1750 slots to the community. We booked 1762 appointments and after cancellations and no-shows, we able to go above our target and vaccinate 1543 patients. 
+
+<br/> <hr/>
+**As a quick note, the aggregate NPS score across all three clinics is 94.**
 
 
 <br/> <hr/>
