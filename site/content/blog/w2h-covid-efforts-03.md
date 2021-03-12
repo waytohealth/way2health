@@ -1,6 +1,6 @@
 ---
 title: Responding to COVID-19. Part 3 - Results Reporting
-date: '2021-03-16'
+date: '2021-03-18'
 summary: >-
   This is part 3 of a series on Way to Health's involvement in helping address the COVID-19 pandemic. This post focuses on the design and launch of the COVID Automated Results Reporting project. The intent behind this effort was to try and eliminate the manual effort around test result communication (especially when negative). While this was intially focused on patients, the effort quickly expanded to employees and most recelty, students, faculty and staff here at Penn. 
 image: /images/uploads/covid.blog.03.jpg
