@@ -73,4 +73,4 @@ It was also validating to see this note in the Philadelphia Inquirer (Letters to
 
 
 <br/> <hr/>
-Hope you found this post useful. Please feel free to drop us a line via the Contact link below and we'll be happy to discuss this more with you. Look for part 5 of this series next week.
+Hope you found this post useful. Please feel free to drop us a line via the Contact link below and we'll be happy to discuss this more with you. Look for part 3 of this series next week.

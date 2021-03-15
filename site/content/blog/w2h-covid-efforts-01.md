@@ -69,4 +69,4 @@ Given the success of the program and the sister program (COVID Pulse that gave p
 There is an additional manuscript being written about the effectiveness of the Watch program. More on that soon. 
 
 <br/> <hr/>
-Hope you found this post useful. Please feel free to drop us a line via the Contact link below and we'll be happy to discuss this more with you. Look for part 3 of this series next week.
+Hope you found this post useful. Please feel free to drop us a line via the Contact link below and we'll be happy to discuss this more with you. Look for part 2 of this series next week.
