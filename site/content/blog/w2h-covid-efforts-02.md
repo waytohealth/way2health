@@ -69,7 +69,7 @@ As before, there were no lines and NPS still remained at around 90 with over 500
 
 It was also validating to see this note in the Philadelphia Inquirer (Letters to the Editor) and the accompanying photo. Thanks to Penn Medicine's CMO, P.J. Brennan (no relation to the author of that letter!!) for clipping, copying and sharing that with all of us. 
 
-![alt Inquirer Letters to Editor](/images/uploads/inquirer.jpg "Inquirer Letters to Editor") 
+![alt Inquirer Letters to Editor](/images/uploads/inquirer2.png "Inquirer Letters to Editor") 
 
 
 <br/> <hr/>
