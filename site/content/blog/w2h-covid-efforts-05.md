@@ -1,6 +1,6 @@
 ---
 title: Responding to COVID-19. Part 5 - COVID Pulse
-date: '2021-03-30'
+date: '2021-03-29'
 summary: >-
   This is part 5 of a series on Way to Health's involvement in helping address the COVID-19 pandemic. This post focuses on the design and launch of the COVID Pulse project. This project addressed the Emergency Department (ED) need to be able to discharge patients with suspected COVID but not requiring immediate admission. The goal was to give these patients a pulse oximeter and remind them to send in their SpO2 readings on a regular basis. Way to Health would process these and based on the clinical algorithm escalate the patient as needed. 
 image: /images/uploads/covid.blog.02.jpg
