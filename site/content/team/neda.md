@@ -1,6 +1,6 @@
 ---
 name: Neda Khan 
-title: Sr. Analyst
+title: Innovation Manager
 twitter: 
 linkedin: neda-khan-946672100
 1bgpic: /images/bg/photo12.jpg
