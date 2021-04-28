@@ -10,7 +10,7 @@
             {{ range .listing }}
             <div class="p-4 mb-4">
                 <h3 class="text-xl mb-2 font-heading sm:text-2xl">{{ .subtitle }}</h3>
-                <p class="text-gray-600 leading-relaxed">{{ .description }} </p>
+                <p class="text-gray-600 leading-relaxed">{{ .description | markdownify}} </p>
             </div>
             {{ end }}
             {{ if .source }}
