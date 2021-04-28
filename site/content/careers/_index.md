@@ -61,11 +61,11 @@ modules:
         - subtitle: Presenting
           description: Setting up a dashboard or ETL to our analytics database to illustrate the value of W2H programs to health system executives, or to provide visibility into the operations of a program. Presenting to leadership on successes of various programs on a quarterly basis or more frequently. 
       is_even: false
-    - module_name: You got this far. 5 more mins?
+    - module_name: You got this far. 2 more mins?
       image: images/bg/apply.svg
       image_caption:
       listing:
         - subtitle: Engineers / Software developers
-          description: We're currently looking for TWO (2) software developers to join the team. A full job description and requirements can be found [here](https://w2h.us/developer). Please apply.
+          description: We're currently looking for TWO software developers to join the team. A full job description and requirements can be found [here](https://w2h.us/developer). Please apply.
       is_even: true
 ---
