@@ -65,8 +65,6 @@ modules:
       image: images/bg/apply.svg
       image_caption:
       listing:
-        - subtitle: Implementation Specialists
-          description: We do not currently have any openings for implementation specialists, but if you're interested, please drop us a line [here](mailto:WayToHealth@pennmedicine.upenn.edu). We'd love to stay in touch for when we do have an opening. 
         - subtitle: Engineers / Software developers
           description: We're currently looking for TWO (2) software developers to join the team. A full job description and requirements can be found [here](https://w2h.us/developer). Please apply.
       is_even: true
