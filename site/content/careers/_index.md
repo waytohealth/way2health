@@ -44,7 +44,7 @@ modules:
         - subtitle: Technology
           description: 'We have some constraints but we are flexible on technology choices as long as they are maintainable. Some details: PHP, Symfony, VueJS, MariaDB, PostgreSQL, Jenkins, Gitlab, Docker, Azure, Mirth Connect.'
         - subtitle: Hiring requirements
-          description: In short: Software Developer candidates must have a Bachelor's Degree (in any field) and at least 3 years of experience in web development. Healthcare experience and/or interest is a plus. See the [job description](https://w2h.us/developer) for more details.
+          description: "In short: Software Developer candidates must have a Bachelor's Degree (in any field) and at least 3 years of experience in web development. Healthcare experience and/or interest is a plus. See the [job description](https://w2h.us/developer) for more details."
       is_even: true
     - module_name: Day in your life
       image: images/duplicate.svg
