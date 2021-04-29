@@ -20,7 +20,7 @@ modules:
         - subtitle: Growth
           description: Every day, month, and year we're addressing bigger and more interesting challenges. We learn, we get better, we do more. If you're looking for something boring and comfortable, we might not be a good fit. But c'mon... 
         - subtitle: The team
-          description: We're admittedly biased, but our team kicks ass. We power a [wide array and dazzling number of programs](/projects/), have built [a powerful and resilient platform](/features/), and are kind and caring to each other, our customers, and our patients.
+          description: We're admittedly biased, but our team kicks ass. We power a [wide array and dazzling number of programs](/projects/), have built [a powerful and resilient platform](/platform/), and are kind and caring to each other, our customers, and our patients.
       is_even: true
     - module_name: About the team
       image: images/bg/team.careers.svg
