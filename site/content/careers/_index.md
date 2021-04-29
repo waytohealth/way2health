@@ -51,11 +51,11 @@ modules:
       image_caption:
       listing:
         - subtitle: Designing
-          description: All programs - research studies as well as clinical projects, are available to be build upon. The programs can be copied over in a couple of clicks and then modified as needed. This can accelerate RCT and clinical deployments and reduce the time to live from months to days or weeks. 
+          description: Design a program in conjunction with clinical or research partners. You have significant input into project design such as patient / participant level interactions, language and more. Expertise with the platform also drives the overall program design and launch. Your work will likely be acknowledged in peer reviewed publications as a co-author. 
         - subtitle: Coding
           description: Building a feature to allow an upcoming research study or clinical program to configure their program in a specific way.
         - subtitle: Improving
-          description: Code reviewing or testing a colleague's code. Or deciding that the automated test coverage is adequate and that we can skip manual QA. Looking into scalability or performance issues on the platform, finding and fixing the root cause of whatever is slowing down the site or background jobs 
+          description: Defining test cases, code reviewing or testing a colleague's code. Or deciding that the automated test coverage is adequate and that we can skip manual QA. Looking into scalability or performance issues on the platform, finding and fixing the root cause of whatever is slowing down the site or background jobs 
         - subtitle: Implementing
           description: Pairing with one of our implementation specialists on a tricky build - either helping them figure out how to combine WayToHealth's building blocks to accomplish what they need, or figuring out what additional building block we need to develop in order to do so
         - subtitle: Presenting
