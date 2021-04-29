@@ -61,7 +61,7 @@ modules:
       listing:
         - subtitle: Program Library
           module_name: Study Library        
-          description: All programs - research studies as well as clinical projects, are available to be build upon. The programs can be copied over in a couple of clicks and then modified as needed. This can accelerate RCT and clinical deployments and reduce the time to live from months to days or weeks. 
+          description: All programs - research studies as well as clinical projects - are available to be built upon. The programs can be copied over in a couple of clicks and then modified as needed. This can accelerate RCT and clinical deployments and reduce launch time from months to days or weeks. 
           id: library
         - subtitle: Survey Library
           module_name: Study Library        
