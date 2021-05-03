@@ -6,7 +6,15 @@ title: >-
 date: '2021-05-03'
 summary: >-
   This is the formal publication of the Flu study which was published earlier in
-  a pre-release on SSRN. 
+  a pre-release on SSRN. Which as a quick reminder - Powered by Way to Health,
+  this study was run at Penn Medicine and Geisinger. In the fall of 2020, close
+  to 50,000 patients received one of 19 different messages prior to a healthy
+  visit to their primary care provider. In the new study, roughly a third of the
+  messages BCFG tested significantly increased flu shot uptake.  The top
+  performing message set—designed by Jon Bogard, Craig Fox, Jehan Sparks, and
+  Megan Weber from the University of California at Los Angeles, and Matt
+  Hilchey, Melanie Kim, Dilip Soman, and Renante Rondina from the University of
+  Toronto, in collaboration with BCFG—boosted vaccination rates by 11%.
 authors: >-
   Katherine L. Milkman, Mitesh S. Patel, Linnea Gandhi, Heather Graci, Dena
   Gromet, Hung Ho,, Joseph Kay, Timothy Lee, Modupe Akinola, John Beshears, Jon
