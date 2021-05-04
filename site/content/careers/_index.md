@@ -2,7 +2,7 @@
 title: A mission that matters
 image: images/bg/w2h.inn.logo.jpg
 bgcolor: "#242F40"
-subtitle: Join a team that has launched over 200 programs, improved the lives of over a million patients and citizens while maintaining very high customer and patient satisfaction scores.
+subtitle: Join a team that has launched over 200 research studies and clinical programs, improved the lives of over a million patients and citizens, and facilitated top-notch scientific research.
 introtitle: You got this far. 5 more minutes? 
 introsubtitle: We are mission driven and would love to have you join our team.   
 introtext:  
@@ -16,11 +16,11 @@ modules:
       image_caption:
       listing:
         - subtitle: Impact
-          description: Way to Health is making a real difference to patient lives and to healthcare operations. We need your help to launch more programs, launch them faster, and make them more reliable and resilient.
+          description: Way to Health is making a real difference to patient lives and to healthcare operations. We need your help to launch more programs, launch them faster, and make them more reliable, resilient, and scalable.
         - subtitle: Growth
           description: Every day, month, and year we're addressing bigger and more interesting challenges. We learn, we get better, we do more. If you're looking for something boring and comfortable, we might not be a good fit. But c'mon... 
         - subtitle: The team
-          description: We're admittedly biased, but our team kicks ass. We power a [wide array and dazzling number of programs](/projects/), have built [a powerful and resilient platform](/platform/), and are kind and caring to each other, our customers, and our patients.
+          description: We're admittedly biased, but our team kicks ass. We power a [wide number of programs](/projects/), have built [a powerful and resilient platform](/platform/), and are kind and caring to each other, our customers, and our patients.
       is_even: true
     - module_name: About the team
       image: images/bg/team.careers.svg
