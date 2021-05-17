@@ -1,5 +1,5 @@
 ---
-title: DRAFT Terms of Use of the Way to Drive mobile application
+title: Terms of Use of the Way to Drive mobile application
 date: 2017-05-17
 link:
 summary: >-

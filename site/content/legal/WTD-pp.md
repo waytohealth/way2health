@@ -1,5 +1,5 @@
 ---
-title: DRAFT Privacy Policy for Research Involving Way to Drive
+title: Privacy Policy for Research Involving Way to Drive
 date: 2017-05-17
 link:
 summary: >-
