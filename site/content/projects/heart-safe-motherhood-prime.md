@@ -1,7 +1,7 @@
 ---
 title: 'Heart Safe Motherhood: Prime'
 date: 2018-05-01
-area: inprogress
+area: clinical
 subdomain: Womens Health
 status: Active
 authors:

@@ -2,7 +2,7 @@
 title: LaTCH
 date: '2019-11-13'
 area: clinical
-subdomain: 'Lactation '
+subdomain: 'Womens Health '
 authors:
   - authorimage: /images/uploads/wbender.png
     authorname: 'Whitney Bender, MD'

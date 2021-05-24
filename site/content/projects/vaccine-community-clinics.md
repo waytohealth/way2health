@@ -35,6 +35,8 @@ pubs:
   - pubURL: 'https://whyy.org/articles/black-church-leaders-health-systems-organize-mass-vaccination-site-in-west-philadelphia/'
     pubname: >-
       Black church leaders, health systems organize mass vaccination site in West Philadelphia
+  - pubURL: 'https://catalyst.nejm.org/doi/full/10.1056/CAT.21.0094'
+    pubname: 'Operationalizing Equity: A Rapid-Cycle Innovation Approach to Covid-19 Vaccination in Black Neighborhoods'
 solution_area: COVID-19 Response Solutions
 ---
 
@@ -66,11 +68,13 @@ The same team built on the learnings from the first clinic and further refined t
 
 For this clinic, the decision was made to make the entire interaction inbound i.e. community leaders would not need to collect phone numbers. They would just publicize the phone number(s) and interested citizens would either text or call those numbers. The flow was also enhanced to capture more information about allergies and more. INspitae of this added friction, we had 70 and 80 year old citizens complete the flow in it's entirety. Between the two channels, the 750 slots were filled in less than 24 hours. There was hiccup in the process when someone tweeted one of the numbers and also posted it on Facebook. This led to a number of requests from non-qualified individuals (20 years olds with no significant health issues etc.).  These had to be handled manually. We will enhance the program logic to address this case the best that we can going forward.  
 
-**Main Outcomes and Measures**
+**Main Outcomes and Measures after 6 clinics**
 
-- Number of patients vaccinated: TBD
-- Wait times: TBD
-- NPS score: TBD
+- Number of patients vaccinated: 7500
+- Black or brown vaccine recipients: 85%
+- Wait times: <1 min
+- NPS score: 90+
+- Second dose show rate: 99.4%
 
 ## Way to Health Use
 
