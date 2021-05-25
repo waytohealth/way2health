@@ -16,10 +16,10 @@ authors:
 summary: >-
   In a concerted effort to address racial inequities. Penn Medicine partnered with Mercy Health, local pastors and the community in West and Southwest Philadelphia, to set up a community vaccination clinic. The goal was to vaccinate 500 individuals who met the 1A or 1B criteria set forth by the city. Way to Health provided the texting and IVR backends to enable registration and appointment scheduling prior. 557 patients were vaccinated. The next clinic on Feb 27th intends to vaccinate 750. The one after that will hopefully vaccinate 1500. 
 results:
-  - result: 550 citizens vaccinated in 7 hours
-  - result: Minimal wait times
+  - result: 7500 citizens vaccinated over 6 clinics
+  - result: Zero wait times
   - result: Patients scheduled and pre-registered (no lines)
-  - result: NPS score of 90 (330+ responses)
+  - result: NPS score of 90+ (1330+ responses)
 features:
   - feature: Bulk messaging
   - feature: IVR and text based communication
