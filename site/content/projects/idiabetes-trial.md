@@ -1,7 +1,7 @@
 ---
 title: iDiabetes Trial
-date: 2016-07-01
-area: inprogress
+date: '2016-07-01'
+area: research
 subdomain: Diabetes
 status: Analysis
 authors:
@@ -10,8 +10,8 @@ authors:
     authorname: Mitesh Patel, MD, MBA, MS
     authorrole: Principal Investigator
   - 
-    authorimage: /images/team/asch.jpg
-    authorname: David Asch, MD, MBA
+    authorimage: /images/team/volpp.jpg
+    authorname: Kevin Volpp, MD, PhD
     authorrole: Investigator
 summary: >
   The objective of this study is to use a randomized, controlled trial to test the
@@ -25,10 +25,22 @@ features:
     feature: Social Incentives
   - 
     feature: Gamification
+results:
+  - result: Gamification interventions had significant increase in activity
+  - result: No significant changes in weight or A1c levels
+features:
+  - feature: Device Integration
+  - feature: Randomization
+  - feature: Gamification
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: false
 label: Standard of Care 
 image: /images/uploads/hsm.01.jpg
+externalurl: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2780065
+pubs:
+  - pubURL: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2780065'
+    pubname: >-
+      Effect of Behaviorally Designed Gamification With Social Incentives on Lifestyle Modification Among Adults With Uncontrolled Diabetes
 ---

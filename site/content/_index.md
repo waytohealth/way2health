@@ -2,7 +2,7 @@
 title: Evidence Based Patient Engagement
 bgcolor: "#2e376b"
 image: images/innovate.svg
-summary: Leverage tools and techniques developed by researchers and clinicians across 300+ programs, 850,000+ patients and 75+ peer reviewed publications
+summary: Leverage tools and techniques developed by researchers and clinicians across 200+ programs, 1,250,000+ patients and 75+ peer reviewed publications
 contactid: indexcontact
 
 customers:

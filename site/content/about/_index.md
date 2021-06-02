@@ -51,20 +51,25 @@ origins:
 
 timeline:
   milestones:
+    - date: May 2021
+      icon: trophy
+      iconcolor: blue
+      milestone: 200+ programs and 1,250,000+ patients
+      text: We hit our 5 year goal of touching 1 million patients / participants in 2 years. 
     - date: February 2021
       icon: trophy
       iconcolor: blue
-      milestone: 300+ programs and 850,000+ patients
+      milestone: 190+ programs and 850,000+ patients
       text: We expect to hit our 5 year goal of touching 1 million patients / participants this year. We are proud to be part of some ground breaking studies (BCFG Flu vaccination) and also enabling COVID vaccination related efforts including local community clinics and larger outreach to vulnerable patient populations. 
     - date: December 2020
       icon: line-chart
       iconcolor: blue
-      milestone: 290+ programs and 530,000+ patients
+      milestone: 190+ programs and 530,000+ patients
       text: Mega programs are increasingly deployed on Way to Health targeting entire populations of patients with specific conditions, states and much more. Key programs continue to have 75+ NPS ratings.
     - date: July 2020
       icon: line-chart
       iconcolor: blue
-      milestone: 280+ programs and 110,000+ patients
+      milestone: 180+ programs and 110,000+ patients
       text: Way to Health is increasingly used in clinical programs and is central to Penn's COVID-19 response efforts. Programs such as COVID Watch, COVID Pulse, Results Reporting and many more get rolled out in record time. 
     - date: December 2019
       icon: trophy
