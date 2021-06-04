@@ -18,6 +18,7 @@
             <a href="{{ .Params.externallink }}" target="_blank" class="block mt-1 text-lg leading-tight font-semibold text-indigo-600 hover:underline">{{ .Params.title }}</a>
         {{ else }}
             <a href="{{ .Permalink }}" class="block mt-1 text-lg leading-tight font-semibold text-indigo-600 hover:underline">{{ .Params.title }}</a>
+            <p>{{.ReadingTime}} mins</p>
         {{ end }}
 
         <p class="mt-2 text-gray-500">{{ .Params.authors }}</p>
