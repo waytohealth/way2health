@@ -132,7 +132,7 @@ version{instance="beanstalkd:11300"} 1.1
 ```
 
 # What do we see or what can we already learn?
-
+* Jobs going through the queue - airport/first class analogy
 
 # Future directions
 
