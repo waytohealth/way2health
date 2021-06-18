@@ -2,7 +2,7 @@
 title: Grafana and Prometheus
 date: '2021-07-01'
 summary: Summary?
-image: /images/uploads/health.json-alert.png
+image: /images/uploads/queues.png
 authorname: Michael Y. Kopinsky
 authorimage: /images/uploads/kopinsky.jpg
 label: '?'
