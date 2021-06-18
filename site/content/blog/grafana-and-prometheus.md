@@ -9,7 +9,7 @@ summary: >-
 image: /images/uploads/queues2.png
 authorname: Michael Y. Kopinsky
 authorimage: /images/uploads/kopinsky.jpg
-label: '?'
+label: technical
 ---
 # Background
 
