@@ -1,14 +1,16 @@
 ---
 title: Grafana and Prometheus
 date: '2021-07-01'
-summary: Summary?
+summary: >-
+  We recently introduced a new component - or rather set of components - to our
+  infrastructure to improve our ability to monitor the operations of Way to
+  Health. Prometheus and Grafana give us clear visual metrics for how things are
+  working under the hood.
 image: /images/uploads/queues.png
 authorname: Michael Y. Kopinsky
 authorimage: /images/uploads/kopinsky.jpg
 label: '?'
 ---
-We recently introduced a new component - or rather set of components - to our infrastructure to improve our ability to monitor the operations of Way to Health under the hood.
-
 # Background
 
 Prior to introducing these tools, 
