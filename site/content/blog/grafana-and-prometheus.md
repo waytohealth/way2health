@@ -11,6 +11,8 @@ authorname: Michael Y. Kopinsky
 authorimage: /images/uploads/kopinsky.jpg
 label: technical
 ---
+![]()
+
 # Background
 
 We'll write another post soon about our current monitoring strategy with [health.json](https://inadarei.github.io/rfc-healthcheck/). In short, our application exposes a `/health.json` endpoint which contains information about each of the underlying components of our system - backend microservices, scheduled tasks, daemons, queues, and so on. We run a monitoring tool (sensu) which checks that endpoint every 5 minutes and sends a message to slack if it returns a status of `fail`.
@@ -28,7 +30,7 @@ We chose prometheus because it focuses on quantitative timeseries data rather th
 
 # What are each of these new tools?
 
-<img src="/images/uploads/prometheus-architecture.png" width="200" align="right">
+<img src="/images/uploads/prometheus-architecture2.png" width="200" align="right">
 
 * [Grafana](https://grafana.com/grafana/) is a dashboard tool that can connect to various data sources. Most commonly it’s used together with Prometheus, but it can also connect to SQL databases, log aggregators, or other things.
 * [Prometheus](https://prometheus.io/) is a tool for monitoring and alerting, especially focused on time series data. It is the backend that collects and stores the data, and has a minimal frontend where you can run one-off queries, see graphs, etc. You can’t save graphs or create dashboards - that’s where Grafana comes in.
@@ -99,6 +101,6 @@ tube_current_jobs_ready{instance="beanstalkd:11300",tube="events0"} 744
 * **Data sources:** To start, the only data we’re pulling into prometheus is beanstalkd data. In the future, I see us pulling in additional sources of data, such as:
   * **Daemon runtime info from pm2:** Restarts per minute are impossible to capture with our current health.json approach. Health.json/Sensu also throw errors into slack when daemons are down during a deploy. Ideally what we'd want is to only be alerted if daemons are down for more than ~3 minutes (the typical duration of a deploy)
   * **Integration message data from Mirth Connect:** Some of these can be fetched from the API (the same API endpoints powering Mirth's dashboard), others (e.g. performance) might require either looking at individual messages via API or pushing data to a logging tool
-      * Error rate - if a channel normally errors once or twice per day and now it’s erroring 60 times a day, that means something is up.
-      * Performance - is a channel slowing down over time?
-      * Volume trends - if a channel is suddenly enrolling twice as many or half as many participants as yesterday/last week, that might indicate something.
+    * Error rate - if a channel normally errors once or twice per day and now it’s erroring 60 times a day, that means something is up.
+    * Performance - is a channel slowing down over time?
+    * Volume trends - if a channel is suddenly enrolling twice as many or half as many participants as yesterday/last week, that might indicate something.
