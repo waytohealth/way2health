@@ -14,9 +14,10 @@ label: technical
 # Background
 We'll write another post soon about our current monitoring strategy with [health.json](https://inadarei.github.io/rfc-healthcheck/). In short, our application exposes a `/health.json` endpoint which contains information about each of the underlying components of our system - backend microservices, scheduled tasks, daemons, queues, and so on. We run a monitoring tool (sensu) which checks that endpoint every 5 minutes and sends a message to slack if it returns a status of `fail`.
 
-<img src="/images/uploads/health.json-alert.png" width="200">
+<img src="/images/uploads/health.json-alert.png" width="600">
 
 This alerts us quickly to errors, but has a few limitations:
+
 1. The checks are stateless, in that they're only looking at the state of the system at a moment in time. There are certain daemons that we pause during deploys, and if sensu checks the health.json during that window, it will report a failure because the necessary daemons are not running. Similarly, if a queue momentarily spikes to above the threshold, even if the queue clears out quickly we might see an alert pop into Slack creating alert fatigue.
 1. We have no ability to silence individual errors within health.json. In the screenshot above, a monthly scheduled task has not run since the job scheduler rebooted, which means that the warning remains permanently present. We don't alert on warnings alone, but it would be nice if we could silence just that one warning.
 1. We get a single message sent to slack about all failing components. We customized the alert message to display each component on its own line, but it still requires some mental attention to parse the alert and see if any additional components are now erroring. When we're mid-incident addressing issues (or post-incident and an issue is resolved but the metrics are still returning to normal) that additional cognitive load just contributes to alert fatigue.
