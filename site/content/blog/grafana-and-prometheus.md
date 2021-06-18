@@ -28,7 +28,7 @@ We chose prometheus because it focuses on quantitative timeseries data rather th
 
 # What are each of these new tools?
 
-<img src="/images/uploads/prometheus-architecture.png" width="300" align="right">
+<img src="/images/uploads/prometheus-architecture.png" width="200" align="right">
 
 * [Grafana](https://grafana.com/grafana/) is a dashboard tool that can connect to various data sources. Most commonly it’s used together with Prometheus, but it can also connect to SQL databases, log aggregators, or other things.
 * [Prometheus](https://prometheus.io/) is a tool for monitoring and alerting, especially focused on time series data. It is the backend that collects and stores the data, and has a minimal frontend where you can run one-off queries, see graphs, etc. You can’t save graphs or create dashboards - that’s where Grafana comes in.
