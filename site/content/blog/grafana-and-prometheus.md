@@ -6,7 +6,7 @@ summary: >-
   infrastructure to improve our ability to monitor the operations of Way to
   Health. Prometheus and Grafana give us clear visual metrics for how things are
   working under the hood.
-image: /images/uploads/queues.png
+image: /images/uploads/queues2.png
 authorname: Michael Y. Kopinsky
 authorimage: /images/uploads/kopinsky.jpg
 label: '?'
