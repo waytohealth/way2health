@@ -99,6 +99,6 @@ tube_current_jobs_ready{instance="beanstalkd:11300",tube="events0"} 744
 * **Data sources:** To start, the only data we’re pulling into prometheus is beanstalkd data. In the future, I see us pulling in additional sources of data, such as:
   * **Daemon runtime info from pm2:** Restarts per minute are impossible to capture with our current health.json approach. Health.json/Sensu also throw errors into slack when daemons are down during a deploy. Ideally what we'd want is to only be alerted if daemons are down for more than ~3 minutes (the typical duration of a deploy)
   * **Integration message data from Mirth Connect:** Some of these can be fetched from the API (the same API endpoints powering Mirth's dashboard), others (e.g. performance) might require either looking at individual messages via API or pushing data to a logging tool
-    * Error rate - if a channel normally errors once or twice per day and now it’s erroring 60 times a day, that means something is up.
-    * Performance - is a channel slowing down over time?
-    * Volume trends - if a channel is suddenly enrolling twice as many or half as many participants as yesterday/last week, that might indicate something.
+      * Error rate - if a channel normally errors once or twice per day and now it’s erroring 60 times a day, that means something is up.
+      * Performance - is a channel slowing down over time?
+      * Volume trends - if a channel is suddenly enrolling twice as many or half as many participants as yesterday/last week, that might indicate something.
