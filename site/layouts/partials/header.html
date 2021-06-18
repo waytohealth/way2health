@@ -49,12 +49,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <!--meta name="author" content="Mohan Balachandran">
         <meta name="robots" content="noindex, nofollow"-->
-    <meta name="description" content="{{ $.Site.Params.description }}" />
-    <meta name="author" content="{{ $.Site.Params.author }}" />
+    <meta name="description" content="{{ .Params.Summary | default $.Site.Params.description }}" />
+    <meta name="author" content="{{ .Params.authorname | default $.Site.Params.author }}" />
     <meta name="robots" content="{{ $.Site.Params.robots }}" />
   <base
       href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-  <title>{{ $.Site.Title }}</title>
+  {{ with .Param "Title" }}
+    <title>{{ . }} - {{ $.Site.Title }}</title>
+  {{ else }}
+    <title>{{ $.Site.Title }}</title>
+  {{ end }}
 
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
