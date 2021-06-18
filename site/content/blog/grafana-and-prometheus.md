@@ -19,8 +19,11 @@ We'll write another post soon about our current monitoring strategy with [health
 
 This alerts us quickly to errors, but has a few problems:
 
-1. We have no ability to silence individual errors within health.json. If one component is returning an error (which we're working on or have addressed but ), it's not easy to see if another XXXX
-1. aaa
+1. We have no ability to silence individual errors within health.json. If one component is returning an error (which we're working on or have addressed but ), it's not easy to see if another XXXX. Alert fatigue
+1. Have to make up thresholds - no visibility into patterns
+1. 
+
+We chose prometheus because it focuses on quantitative timeseries data rather than forcing us too quickly into fail/warn/pass categorization.
 
 # What are each of these new tools?
 
@@ -127,6 +130,9 @@ uptime{instance="beanstalkd:11300"} 996309
 # TYPE version gauge
 version{instance="beanstalkd:11300"} 1.1
 ```
+
+# What do we see or what can we already learn?
+
 
 # Future directions
 
