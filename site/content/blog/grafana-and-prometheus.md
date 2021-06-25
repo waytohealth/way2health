@@ -11,8 +11,6 @@ authorname: Michael Y. Kopinsky
 authorimage: /images/uploads/kopinsky.jpg
 label: technical
 ---
-![]()
-
 # Background
 
 We'll write another post soon about our current monitoring strategy with [health.json](https://inadarei.github.io/rfc-healthcheck/). In short, our application exposes a `/health.json` endpoint which contains information about each of the underlying components of our system - backend microservices, scheduled tasks, daemons, queues, and so on. We run a monitoring tool (sensu) which checks that endpoint every 5 minutes and sends a message to slack if it returns a status of `fail`.
@@ -40,7 +38,6 @@ We chose prometheus because it focuses on quantitative timeseries data rather th
 Both Grafana and Prometheus can do alerting. It seems like in general, the recommendation is to set up alerts within Grafana rather than Prometheus. To date (June 2021), we’re not using these for alerts yet, just for visualizing metrics.
 
 ## Feeding data to Prometheus
-
 Prometheus expects to get its metrics in a specific format. By convention, it’s usually at `http://some-hostname/metrics`, and the format needs to be something like the below. For apps that don’t speak this language by default, typically you use an "exporter" to pull data from the application and return it in this format.
 Below is a shortened version of what’s returned by beanstalkd_exporter. In this, you see a mix of:
 
@@ -48,7 +45,6 @@ Below is a shortened version of what’s returned by beanstalkd_exporter. In thi
 * Metrics for each "tube" (which is beanstalkd's language for a specific queue) 
 * Incrementing counters (e.g. total number of times the “delete” command has been used) - you’d only really want to graph the rate of change, not the actual number
 * Current stats (e.g. current_jobs_ready) which you'd graph directly as a time series.
-
 
 ```
 # HELP cmd_delete is the cumulative number of delete commands.
@@ -88,10 +84,8 @@ tube_current_jobs_ready{instance="beanstalkd:11300",tube="events0"} 744
 ```
 
 # What do we see or what can we already learn?
-
 * Jobs going through the queue - airport/first class analogy
   XXXX
-    
 
 # Future directions
 
