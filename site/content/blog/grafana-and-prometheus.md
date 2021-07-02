@@ -20,10 +20,16 @@ XXXX add a bit more
 Before I dive into the details of these new tools, it's worth giving a summary of some things it's built upon.
 
 ## beanstalkd and queues
-XXXXX
+Business logic in w2h runs in one of four contexts - synchronously in a web request, as a scheduled task, as a daemon, or via a queue. As a quick example of each:
+1. **Web request:** When someone saves an event configuration, the server immediately validates the configuration, returning an error to the user if it's not valid.
+2. **Scheduled:** Every hour we run a task to send program staff a daily digest with escalations/incidents from the past day. (Most staff have these set to go at 8am, but not everyone is in the same timezone.)
+3. **Daemon:** Every 30 seconds we run a database query to find active SMS conversations which are ready to be closed/expired. This could in theory be done as a scheduled task running every minute, but running it as its own daemon just makes more sense and is simpler operationally.
+4. **Via a queue:** When staff request a report, it pushes an `exportDataJob` onto a queue, which will get processed in a first-in-first-out fashion by a queue worker.
+
+That fourth category (of queue jobs) operates via [beanstalkd](https://beanstalkd.github.io/) using the [Laravel queue component](https://laravel.com/docs/8.x/queues). Beanstalkd is a simple and rock solid queue manager. It doesn't have all the fancy features of Amazon SQS or RabbitMQ, but it does the job and is simple to run.
 
 ## health.json
-Our application monitoring prior to introducing these tools centered primarily around [health.json](https://inadarei.github.io/rfc-healthcheck/). Our application exposes a `/health.json` endpoint which contains information about each of the underlying components of our system - backend microservices, scheduled tasks, daemons, queues, and so on. Each component has configured thresholds for pass/warn/fail - e.g. if an hourly scheduled task hasn't run in 1:30 it warns, and after 3 hours it fails. Our `default` queue warns if it exceeds 1000 jobs waiting, or if jobs have been waiting for more than 15 minutes. These thresholds are chosen and adjusted manually and have some amount of false positives/negatives associated with them.
+Prior to introducing Grafana and Prometheus, our application monitoring centered primarily around [health.json](https://inadarei.github.io/rfc-healthcheck/). Our application exposes a `/health.json` endpoint which contains information about each of the underlying components of our system - backend microservices, scheduled tasks, daemons, queues, and so on. Each component has configured thresholds for pass/warn/fail - for example, if a task scheduled to run hourly hasn't run in 1:30 it warns, and after 3 hours it fails. Our `default` queue warns if it exceeds 1000 jobs waiting, or if jobs have been waiting for more than 15 minutes. These thresholds are chosen and adjusted manually and have some amount of false positives/negatives associated with them.
 We run a monitoring tool (sensu) which checks that endpoint every 5 minutes and sends a message to slack if it returns a status of `fail`.
 
 <img src="/images/uploads/health.json-alert.png" width="600" alt="screenshot of health.json alert in slack">
