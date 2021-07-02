@@ -16,11 +16,14 @@ XXXX add a bit more
 
 
 
-# Background
+## Background
 Before I dive into the details of these new tools, it's worth giving a summary of some things it's built upon.
 
-## beanstalkd and queues
-Business logic in w2h runs in one of four contexts - synchronously in a web request, as a scheduled task, as a daemon, or via a queue. As a quick example of each:
+### beanstalkd and queues
+Business logic in w2h runs in one of four contexts - synchronously in a web request, as a scheduled task, as a daemon, or via a queue.
+
+As a quick example of each:
+
 1. **Web request:** When someone saves an event configuration, the server immediately validates the configuration, returning an error to the user if it's not valid.
 2. **Scheduled:** Every hour we run a task to send program staff a daily digest with escalations/incidents from the past day. (Most staff have these set to go at 8am, but not everyone is in the same timezone.)
 3. **Daemon:** Every 30 seconds we run a database query to find active SMS conversations which are ready to be closed/expired. This could in theory be done as a scheduled task running every minute, but running it as its own daemon just makes more sense and is simpler operationally.
@@ -28,7 +31,7 @@ Business logic in w2h runs in one of four contexts - synchronously in a web requ
 
 That fourth category (of queue jobs) operates via [beanstalkd](https://beanstalkd.github.io/) using the [Laravel queue component](https://laravel.com/docs/8.x/queues). Beanstalkd is a simple and rock solid queue manager. It doesn't have all the fancy features of Amazon SQS or RabbitMQ, but it does the job and is simple to run.
 
-## health.json
+### health.json
 Prior to introducing Grafana and Prometheus, our application monitoring centered primarily around [health.json](https://inadarei.github.io/rfc-healthcheck/). Our application exposes a `/health.json` endpoint which contains information about each of the underlying components of our system - backend microservices, scheduled tasks, daemons, queues, and so on. Each component has configured thresholds for pass/warn/fail - for example, if a task scheduled to run hourly hasn't run in 1:30 it warns, and after 3 hours it fails. Our `default` queue warns if it exceeds 1000 jobs waiting, or if jobs have been waiting for more than 15 minutes. These thresholds are chosen and adjusted manually and have some amount of false positives/negatives associated with them.
 We run a monitoring tool (sensu) which checks that endpoint every 5 minutes and sends a message to slack if it returns a status of `fail`.
 
@@ -43,7 +46,7 @@ This alerts us quickly to errors, but has a few limitations:
 
 We chose prometheus because it focuses on quantitative timeseries data rather than forcing us too quickly into fail/warn/pass categorization. (And because it's easy to run via docker.)
 
-# What are each of these new tools?
+## What are each of these new tools?
 
 <img src="/images/uploads/prometheus-architecture2.png" width="200" align="right" alt="Prometheus architecture diagram">
 
@@ -54,7 +57,7 @@ We chose prometheus because it focuses on quantitative timeseries data rather th
 
 Both Grafana and Prometheus can do alerting. It seems like in general, the recommendation is to set up alerts within Grafana rather than Prometheus. To date (July 2021), we’re not using these for alerts yet, just for visualizing metrics.
 
-## Feeding data to Prometheus
+### Feeding data to Prometheus
 Prometheus expects to get its metrics in a specific [text-based format](https://prometheus.io/docs/instrumenting/exposition_formats/). By convention, it’s usually at `http://some-hostname/metrics`, and the format needs to be something like the below. For apps that don’t speak this language by default, typically you use an "exporter" to pull data from the application and return it in this format.
 
 Below is a shortened version of what’s returned by beanstalkd_exporter. In this, you see a mix of:
@@ -101,11 +104,11 @@ tube_current_jobs_ready{instance="beanstalkd:11300",tube="events0"} 744
 ...
 ```
 
-# What do we see or what can we already learn?
+## What do we see or what can we already learn?
 * Jobs going through the queue - airport/first class analogy
   XXXX
 
-# Future directions
+## Future directions
 
 * **Alerting.** To start, we've set up these tools only to monitor with no alerts set up at all. Once we have a week or two of data, we'll set up alerts within prometheus or grafana and gradually migrate them out of health.json.
   * **Dynamic thresholds for queues:** Currently health.json has hardcoded thresholds. Which means we need to set them, guess at what a problematic value is, and deal with false positives when it briefly goes above that. Prometheus and Grafana should let us set triggers like: “Alert if the queue stays above 1000 for more than 5 minutes” or “Alert if this queue length gets longer than 120% of its 2-week high-water-mark”.
