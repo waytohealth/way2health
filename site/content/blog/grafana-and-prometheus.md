@@ -11,11 +11,22 @@ authorname: Michael Y. Kopinsky
 authorimage: /images/uploads/kopinsky.jpg
 label: technical
 ---
+We recently introduced a new component - or rather set of components - to our infrastructure to improve our ability to monitor the operations of Way to Health. Prometheus and Grafana give us clear visual metrics for how things are working under the hood.
+XXXX add a bit more
+
+
+
 # Background
+Before I dive into the details of these new tools, it's worth giving a summary of some things it's built upon.
 
-We'll write another post soon about our current monitoring strategy with [health.json](https://inadarei.github.io/rfc-healthcheck/). In short, our application exposes a `/health.json` endpoint which contains information about each of the underlying components of our system - backend microservices, scheduled tasks, daemons, queues, and so on. We run a monitoring tool (sensu) which checks that endpoint every 5 minutes and sends a message to slack if it returns a status of `fail`.
+## beanstalkd and queues
+XXXXX
 
-<img src="/images/uploads/health.json-alert.png" width="600">
+## health.json
+Our application monitoring prior to introducing these tools centered primarily around [health.json](https://inadarei.github.io/rfc-healthcheck/). Our application exposes a `/health.json` endpoint which contains information about each of the underlying components of our system - backend microservices, scheduled tasks, daemons, queues, and so on. Each component has configured thresholds for pass/warn/fail - e.g. if an hourly scheduled task hasn't run in 1:30 it warns, and after 3 hours it fails. Our `default` queue warns if it exceeds 1000 jobs waiting, or if jobs have been waiting for more than 15 minutes. These thresholds are chosen and adjusted manually and have some amount of false positives/negatives associated with them.
+We run a monitoring tool (sensu) which checks that endpoint every 5 minutes and sends a message to slack if it returns a status of `fail`.
+
+<img src="/images/uploads/health.json-alert.png" width="600" alt="screenshot of health.json alert in slack">
 
 This alerts us quickly to errors, but has a few limitations:
 
@@ -28,22 +39,23 @@ We chose prometheus because it focuses on quantitative timeseries data rather th
 
 # What are each of these new tools?
 
-<img src="/images/uploads/prometheus-architecture2.png" width="200" align="right">
+<img src="/images/uploads/prometheus-architecture2.png" width="200" align="right" alt="Prometheus architecture diagram">
 
 * [Grafana](https://grafana.com/grafana/) is a dashboard tool that can connect to various data sources. Most commonly it’s used together with Prometheus, but it can also connect to SQL databases, log aggregators, or other things.
 * [Prometheus](https://prometheus.io/) is a tool for monitoring and alerting, especially focused on time series data. It is the backend that collects and stores the data, and has a minimal frontend where you can run one-off queries, see graphs, etc. You can’t save graphs or create dashboards - that’s where Grafana comes in.
   * Prometheus polls various “targets” to get metrics at specified frequencies. The targets are configured in prometheus.yml which is baked into our prometheus docker image.
-* [beanstalkd_exporter](https://github.com/messagebird/beanstalkd_exporter) XXXX
+* [beanstalkd_exporter](https://github.com/messagebird/beanstalkd_exporter) is an open source prometheus exporter which connects to beanstalkd through beanstalkd's TCP-based wire protocol and exports metrics via HTTP using Prometheus's format.
 
-Both Grafana and Prometheus can do alerting. It seems like in general, the recommendation is to set up alerts within Grafana rather than Prometheus. To date (June 2021), we’re not using these for alerts yet, just for visualizing metrics.
+Both Grafana and Prometheus can do alerting. It seems like in general, the recommendation is to set up alerts within Grafana rather than Prometheus. To date (July 2021), we’re not using these for alerts yet, just for visualizing metrics.
 
 ## Feeding data to Prometheus
-Prometheus expects to get its metrics in a specific format. By convention, it’s usually at `http://some-hostname/metrics`, and the format needs to be something like the below. For apps that don’t speak this language by default, typically you use an "exporter" to pull data from the application and return it in this format.
+Prometheus expects to get its metrics in a specific [text-based format](https://prometheus.io/docs/instrumenting/exposition_formats/). By convention, it’s usually at `http://some-hostname/metrics`, and the format needs to be something like the below. For apps that don’t speak this language by default, typically you use an "exporter" to pull data from the application and return it in this format.
+
 Below is a shortened version of what’s returned by beanstalkd_exporter. In this, you see a mix of:
 
 * Metrics across the entire server
-* Metrics for each "tube" (which is beanstalkd's language for a specific queue) 
-* Incrementing counters (e.g. total number of times the “delete” command has been used) - you’d only really want to graph the rate of change, not the actual number
+* Metrics for each "tube" (which is beanstalkd's term for a specific queue)
+* Incrementing counters (e.g. total number of times the "delete" command has been used) - you’d only really want to graph the rate of change, not the actual number. (In this data they are actually labeled as gauges, but they technically could be counters. Perhaps I'll go and open a PR for that.)
 * Current stats (e.g. current_jobs_ready) which you'd graph directly as a time series.
 
 ```
