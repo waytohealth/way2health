@@ -107,12 +107,13 @@ tube_current_jobs_ready{instance="beanstalkd:11300",tube="events0"} 744
 ...
 ```
 
-## What do we see or what can we already learn?
+## One initial interesting takeaway
 
-* Jobs going through the queue - airport/first class analogy
-  XXXX
+Looking at the graph of what jobs wait in the queue, you see lots of fitbit jobs waiting, with some occasional spikes of events to be processed (usually on or shortly after the hour). Based on this, one might assume that these are the vast majority of the jobs going through our queue. The second graph below shows otherwise - the fitbit jobs are constantly being processed at a low rate, but there lots of `default` jobs that don't show up in the top graph at all.
 
 ![graph of jobs waiting and completed per queue](/images/uploads/queues3.png)
+
+Estimating job volume based on the first graph is like trying to estimate airport volume by taking photos of the check-in or security lines. You might conclude, "I almost never see any first class passengers waiting in line to check in - there must not be very many of them". In truth, there are lots of first class passengers, but the first class check-in line is staffed to process those passengers right away. The "fitbit" jobs are analogous to the coach passengers who manage to get cleared just in time for the passengers for the next flight to arrive.
 
 ## Future directions
 
