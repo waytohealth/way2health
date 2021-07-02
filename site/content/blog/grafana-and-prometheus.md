@@ -14,12 +14,12 @@ label: technical
 We recently introduced a new component - or rather set of components - to our infrastructure to improve our ability to monitor the operations of Way to Health. Prometheus and Grafana give us clear visual metrics for how things are working under the hood.
 XXXX add a bit more
 
-
-
 ## Background
+
 Before I dive into the details of these new tools, it's worth giving a summary of some things it's built upon.
 
 ### beanstalkd and queues
+
 Business logic in w2h runs in one of four contexts - synchronously in a web request, as a scheduled task, as a daemon, or via a queue.
 
 As a quick example of each:
@@ -32,6 +32,7 @@ As a quick example of each:
 That fourth category (of queue jobs) operates via [beanstalkd](https://beanstalkd.github.io/) using the [Laravel queue component](https://laravel.com/docs/8.x/queues). Beanstalkd is a simple and rock solid queue manager. It doesn't have all the fancy features of Amazon SQS or RabbitMQ, but it does the job and is simple to run.
 
 ### health.json
+
 Prior to introducing Grafana and Prometheus, our application monitoring centered primarily around [health.json](https://inadarei.github.io/rfc-healthcheck/). Our application exposes a `/health.json` endpoint which contains information about each of the underlying components of our system - backend microservices, scheduled tasks, daemons, queues, and so on. Each component has configured thresholds for pass/warn/fail - for example, if a task scheduled to run hourly hasn't run in 1:30 it warns, and after 3 hours it fails. Our `default` queue warns if it exceeds 1000 jobs waiting, or if jobs have been waiting for more than 15 minutes. These thresholds are chosen and adjusted manually and have some amount of false positives/negatives associated with them.
 We run a monitoring tool (sensu) which checks that endpoint every 5 minutes and sends a message to slack if it returns a status of `fail`.
 
@@ -58,6 +59,7 @@ We chose prometheus because it focuses on quantitative timeseries data rather th
 Both Grafana and Prometheus can do alerting. It seems like in general, the recommendation is to set up alerts within Grafana rather than Prometheus. To date (July 2021), we’re not using these for alerts yet, just for visualizing metrics.
 
 ### Feeding data to Prometheus
+
 Prometheus expects to get its metrics in a specific [text-based format](https://prometheus.io/docs/instrumenting/exposition_formats/). By convention, it’s usually at `http://some-hostname/metrics`, and the format needs to be something like the below. For apps that don’t speak this language by default, typically you use an "exporter" to pull data from the application and return it in this format.
 
 Below is a shortened version of what’s returned by beanstalkd_exporter. In this, you see a mix of:
@@ -66,6 +68,7 @@ Below is a shortened version of what’s returned by beanstalkd_exporter. In thi
 * Metrics for each "tube" (which is beanstalkd's term for a specific queue)
 * Incrementing counters (e.g. total number of times the "delete" command has been used) - you’d only really want to graph the rate of change, not the actual number. (In this data they are actually labeled as gauges, but they technically could be counters. Perhaps I'll go and open a PR for that.)
 * Current stats (e.g. current_jobs_ready) which you'd graph directly as a time series.
+
 
 ```
 # HELP cmd_delete is the cumulative number of delete commands.
@@ -105,8 +108,11 @@ tube_current_jobs_ready{instance="beanstalkd:11300",tube="events0"} 744
 ```
 
 ## What do we see or what can we already learn?
+
 * Jobs going through the queue - airport/first class analogy
   XXXX
+
+![graph of jobs waiting and completed per queue](/images/uploads/queues3.png)
 
 ## Future directions
 
