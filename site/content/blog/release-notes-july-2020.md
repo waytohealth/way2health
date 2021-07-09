@@ -4,12 +4,10 @@ date: '2021-07-09'
 summary: Product updates from July 2020. Focus on performance
 image: /images/uploads/w2h.inn.logo.jpg
 authorname: w2h team
-authorimage: /images/uploads/w2h.inn.logo.jpg
+authorimage: /images/uploads/apple-icon-180x180.png
 label: release notes
 ---
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-
 
 Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 
@@ -18,16 +16,24 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 **Enhancements**
 
 * Performance
+  * Introduce [Scout APM ](https://scoutapm.com/) to help us troubleshoot slow pages and backend operations across the platform
+  * Scale start-events task to be able to process multiple events in parallel
   * Web performance: fewer queries for navigation
   * Web performance: device stats
   * Web performance: inbound twilio webhook
   * Web performance: payment feed
-  * Add index to MRN
-  * Scout APM
+  * Web performance: Add index to MRN
   * Improve Manage Data Performance
-* Add subscription/notification support for Omron
-* TrueMotion integration - Enrollment Flow
-* BE ACTIVE sleep analytics tables and dashboard
+* New integrations
+  * Add subscription/notification support for Omron
+  * TrueMotion integration - Enrollment Flow
+  * TrueMotion (Way to Drive) Unenrollment Flow
+  * Enroll patients discharged from ED with specific diagnoses into FDA site
+* Analytics
+  * BE ACTIVE sleep analytics tables and dashboard
+* Misc
+  * Relax password strictness on ppt portal
+  * Message metadata in inbox should show timestamp with seconds
 
 **Bug fixes**
 
@@ -40,18 +46,13 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 * Can't batch finish participant because system thinks they have open events
 * List variable error because 'invalid value'
 * Omron Integration form display doesn't update though database does
-* Make Study Versionable
 * Password changes broke the profile page
-* Relax password strictness on ppt portal
 * Embed re-enroll button re-enrolls people into their same/closed arms
 * Send message in SMS inbox doesn't work for 'finished' participants
 * Enrollment survey opens and immediately closes in PennChart embed
 * Epic Status filter not working on Manage Data
 * Split out Fitbit processing into more than 2 queues
-* Scale start-events task
 * HSM Penn Medicine discharge data not appearing in Pennchart discharge X 
-* Message metadata in inbox should show timestamp with seconds
-* Clean up rescheduling code
 * Changing survey question text resulted in misconfigured logic sets 
 * 'Stop immediately' function on reschedule not stopping windowed event
 * Do not create multiple Message Failure incidents for the same text message
@@ -59,5 +60,3 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 * Add setting to bypass approval process for filing flowsheet values
 * Trigger event block off of messaging keyword
 * Schedule participant events by day of the week
-* TrueMotion (Way to Drive) Unenrollment Flow
-* Enroll patients discharged from ED with specific diagnoses into FDA site
