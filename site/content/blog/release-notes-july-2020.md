@@ -24,6 +24,7 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
   * Web performance: payment feed
   * Web performance: Add index to MRN
   * Improve Manage Data Performance
+  * Split out Fitbit processing into more than 2 queues
 * New integrations
   * Add subscription/notification support for Omron
   * TrueMotion integration - Enrollment Flow
@@ -34,6 +35,7 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 * Misc
   * Relax password strictness on ppt portal
   * Message metadata in inbox should show timestamp with seconds
+  * Add setting to bypass approval process for filing flowsheet values
 
 **Bug fixes**
 
@@ -51,12 +53,10 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 * Send message in SMS inbox doesn't work for 'finished' participants
 * Enrollment survey opens and immediately closes in PennChart embed
 * Epic Status filter not working on Manage Data
-* Split out Fitbit processing into more than 2 queues
 * HSM Penn Medicine discharge data not appearing in Pennchart discharge X 
 * Changing survey question text resulted in misconfigured logic sets 
 * 'Stop immediately' function on reschedule not stopping windowed event
 * Do not create multiple Message Failure incidents for the same text message
 * Calendar download fails if there's a StudyUserSchedule with no FeedbackEvents
-* Add setting to bypass approval process for filing flowsheet values
 * Trigger event block off of messaging keyword
 * Schedule participant events by day of the week
